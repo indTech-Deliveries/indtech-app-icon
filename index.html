@@ -11,23 +11,26 @@
   <meta name="apple-mobile-web-app-title" content="indTech Deliveries">
   <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <link rel="apple-touch-icon"
-    href="https://indtech-deliveries.github.io/indtech-app-icon/indtech-icon-192.png">
-
-  <link rel="icon" type="image/png"
-    href="https://indtech-deliveries.github.io/indtech-app-icon/indtech-icon-192.png">
-
-  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="./indtech-icon-192.png">
+  <link rel="icon" type="image/png" href="./indtech-icon-192.png">
+  <link rel="manifest" href="./manifest.json">
 </head>
 
-<body style="background:#000;color:white;text-align:center;font-family:Arial">
+<body style="background:#000;color:white;text-align:center;font-family:Arial;padding:30px">
 
-  <p>Opening indTech Deliveries...</p>
+  <h2>indTech Deliveries</h2>
+  <p>Deliveries &amp; Collections</p>
+  <p>Use the Install app option in Chrome to add this app to your phone.</p>
 
   <script>
-    window.location.replace(
-      "https://script.google.com/macros/s/AKfycbwe1wYYxP_-kgFxNaQRxUG0M9CjDl0GZOmhwXTJdgCYQG9Chien_DxjMVJjEFy6Zy-g/exec"
-    );
+    if (
+      window.matchMedia('(display-mode: standalone)').matches ||
+      window.navigator.standalone === true
+    ) {
+      window.location.replace(
+        "https://script.google.com/macros/s/AKfycbwe1wYYxP_-kgFxNaQRxUG0M9CjDl0GZOmhwXTJdgCYQG9Chien_DxjMVJjEFy6Zy-g/exec"
+      );
+    }
   </script>
 
 </body>
