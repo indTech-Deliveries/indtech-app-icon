@@ -1,26 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>indTech Deliveries</title>
+
   <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-title" content="indTech Deliveries">
   <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <title>indTech Deliveries</title>
+  <link rel="apple-touch-icon"
+        href="indtech-icon-192.png">
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://indtech-deliveries.github.io/indtech-app-icon/indtech-icon-192.png">
-<link rel="icon" type="image/png" sizes="192x192" href="https://indtech-deliveries.github.io/indtech-app-icon/indtech-icon-192.png">
+  <link rel="icon"
+        type="image/png"
+        href="indtech-icon-192.png">
+
   <link rel="manifest" href="manifest.json">
 
-  <script>
-    window.location.replace(
-      "https://script.google.com/macros/s/AKfycbwe1wYYxP_-kgFxNaQRxUG0M9CjDl0GZOmhwXTJdgCYQG9Chien_DxjMVJjEFy6Zy-g/exec"
-    );
-  </script>
+  <style>
+    body {
+      background: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 25px;
+    }
+
+    a {
+      display: inline-block;
+      background: #23823d;
+      color: white;
+      padding: 16px 35px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
-  <p>Opening indTech Deliveries...</p>
+
+  <img src="indtech-icon-512.png" alt="indTech">
+
+  <h1>indTech Deliveries</h1>
+
+  <p>Deliveries & Collections</p>
+
+  <a href="https://script.google.com/macros/s/AKfycbwe1wYYxP_-kgFxNaQRxUG0M9CjDl0GZOmhwXTJdgCYQG9Chien_DxjMVJjEFy6Zy-g/exec">
+    Open App
+  </a>
+
+  <script>
+    if (
+      window.matchMedia('(display-mode: standalone)').matches ||
+      navigator.standalone === true
+    ) {
+      window.location.replace(
+        "https://script.google.com/macros/s/AKfycbwe1wYYxP_-kgFxNaQRxUG0M9CjDl0GZOmhwXTJdgCYQG9Chien_DxjMVJjEFy6Zy-g/exec"
+      );
+    }
+  </script>
+
 </body>
 </html>
